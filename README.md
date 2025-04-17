@@ -5,4 +5,12 @@ Brainstorm:
 - potluck
 - birthday
 - rallying event
-- hackathon event 
+- hackathon event
+
+more professional style
+
+interests: 
+- music
+- food
+- art
+

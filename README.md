@@ -1,16 +1,10 @@
 # WIC Spring Quarter Project Teams: Team4
 
-Brainstorm:
-- athletic events
-- potluck
-- birthday
-- rallying event
-- hackathon event
-
-more professional style
-
-interests: 
-- music
-- food
-- art
+Farmer's Market(recurring events site)
+- featured food
+- menus
+- vendors
+- hours/location; other general info
+- (if we have time) interactive map
+- online rsvp
 

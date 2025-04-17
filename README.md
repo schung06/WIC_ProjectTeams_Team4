@@ -1,2 +1,2 @@
-# WIC_ProjectTeams_Team4
+# WIC Spring Quarter Project Teams: Team4
 

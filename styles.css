@@ -5,6 +5,10 @@
     - (Tip: You can always override these rules later in the stylesheet)
 ***/
 
+*{
+    box-sizing: border-box;
+}
+
 
 body {
     /* Add a background color or image */
@@ -19,7 +23,74 @@ body {
 
     /* Put space around the edges of the webpage */
     margin: 50px;
+
+    justify-content: center;
+
+
+
 }
+
+.container{
+    display: flex;
+    width: 50vw;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex:0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.panel h3{
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin:0;
+    opacity: 0;
+
+}
+
+.panel.active{
+    flex: 5;
+
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+
+}
+
+.panel.active:nth-of-type(2) h3{
+    color:black;
+}
+
+.panel.active:nth-of-type(3) h3{
+    color:black;
+}
+
+@media(max-width: 480px){
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4), 
+    .panel:nth-of-type(5){
+        display:none;
+    }
+  }
 
 
 /*** Text ***

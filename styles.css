@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /*** body ***
   Purpose:
   - Add style rules for the body of your webpage
@@ -20,7 +22,7 @@ body {
     /* Customize the default size, color, and font for text*/
     font-size: 16px;
     color: var(--text-color);
-    font-family: Didot, serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
+    font-family: 'Open Sans', sans-serif;
 
 
     /* Put space around the edges of the webpage */
@@ -160,7 +162,6 @@ body {
 
 
 h1 {
-    font: Didot, serif;  
     font-size: 2.5em;            /* 2.5 times the default size */
     color: var(--text-color); /* see bottom of file for color variables */
     text-align: center;          /* Center the text */
@@ -327,7 +328,7 @@ button:hover {
 
 :root {
     /* Light Mode */
-    --bg-color: #f5f5dc;
+    --bg-color: #ffffeb;
     --text-color: #000000;
 
 

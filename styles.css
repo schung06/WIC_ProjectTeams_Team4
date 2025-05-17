@@ -198,6 +198,8 @@ p {
     color: var(--text-color); /* see bottom of file for color variables */
     text-align: left;          /* Center the text */
     margin: 20px;
+    line-height: 30px;
+    letter-spacing: 0.9px;
 }
 
 

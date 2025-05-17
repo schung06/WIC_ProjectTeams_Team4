@@ -7,6 +7,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -22,21 +24,60 @@ body {
 
 
     /* Put space around the edges of the webpage */
-    margin: 50px;
-
-    justify-content: center;
 
 
+    padding-bottom: 50px;
 
 }
 
 .container{
     display: flex;
-    width: 50vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: url('https://amphitheater.ucsd.edu/wp-content/uploads/2024/09/Fall-Farmers-Market-JPEG-002-scaled.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    z-index: -2;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.header h1{
+    font-size: 46px;
+    margin: -20px 0 20px;
+    color: white;
+
+}
+
+.header h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
 }
 
 .panel{
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
@@ -56,11 +97,20 @@ body {
 .panel h3{
     font-size: 30px;
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
     left: 20px;
     margin:0;
     opacity: 0;
 
+}
+
+.panel p{
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin:0;
+    opacity: 0;
 }
 
 .panel.active{
@@ -71,24 +121,33 @@ body {
 .panel.active h3{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.5s;
+    padding: 20px;
 
+}
+
+.panel.active p{
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+    padding: 20px;
+    color: white;
+}
+
+.panel.active:nth-of-type(1) p{
+    color:black;
 }
 
 .panel.active:nth-of-type(2) h3{
-    color:black;
+    color:white;
 }
 
 .panel.active:nth-of-type(3) h3{
-    color:black;
+    color:white;
 }
 
 @media(max-width: 480px){
     .container{
         width: 100vw;
-    }
-    .panel:nth-of-type(4), 
-    .panel:nth-of-type(5){
-        display:none;
     }
   }
 
@@ -113,7 +172,7 @@ h2 {
    font-size: 1.5em;            /* 2.5 times the default size */
     color: var(--text-color); /* see bottom of file for color variables */
     text-align: left;          /* Center the text */
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 
@@ -121,7 +180,7 @@ h3 {
    font-size: 1.5em;            /* 2.5 times the default size */
     color: var(--text-color); /* see bottom of file for color variables */
     text-align: left;          /* Center the text */
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 
@@ -129,7 +188,7 @@ h4 {
    font-size: 1.5em;            /* 2.5 times the default size */
     color: var(--text-color); /* see bottom of file for color variables */
     text-align: left;          /* Center the text */
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 
@@ -137,7 +196,7 @@ p {
     font-size: 1em;            /* 2.5 times the default size */
     color: var(--text-color); /* see bottom of file for color variables */
     text-align: left;          /* Center the text */
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 

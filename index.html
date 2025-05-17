@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        
+
         <!-- head
         Purpose:
         - Title used here shows up in the browser tab
         - Link to the favicon (small image that appears in the browser tab)
         - Link to the CSS file (used to style the webpage)
         -->
+        <link rel="stylesheet" href="styles.css">
+
         <title>Epstein Farmer's Market</title>
         <style>
             /* Style rules go here. */
@@ -19,16 +22,25 @@
         <!-- navbar [PLACEHOLDER] -->
 
 
-        <!-- headings
-
+        <!-- headings 
+        
 
         Purpose:
         - Main header section of the webpage
         - Contains the title, subtitle, image, and key buttons for the webpage
         -->
+        
+
+
+
+        <div class="header">
+            <div class="container">
+                <h1>Epstein Farmers Market</h1>
+                <h2>Celebrating local farmers and food vendors.</h2>
+            </div>
+        </div>
+        
         <img id="header-img" src="./img/logo500.png"/>
-        <h1>Epstein Farmer's Market</h1>
-        <h2>Subtitle</h2>
         <button type="Order Online">Order Online</button>
         <button type="See Directions to Farmer's Market">See Directions to Farmer's Market</button>
 
@@ -40,6 +52,7 @@
         - Section for general info about the event
         - Contains a video, description, and key points about the event
         -->
+        
         <h2>About the Farmer's Market</h2>
         <p>Epstein Farmer's Market is a mini food festival featuring stands
             from local San Diego businesses and food trucks. They feature fresh 
@@ -71,17 +84,27 @@
         <p> Tuesdays 10 am to 2 pm </p>
         <p> Spring Quarter: April 1, 2025 – June 3, 2025 </p>
 
-        <img alt="students walking around and vendor booths" src="https://s3-media0.fl.yelpcdn.com/bphoto/nfIawuKeCzvx5LcTx_IhZA/348s.jpg"/>
-        <h3>Food vendors</h3>
-        <p>Cuisine types include: Mexican, French, New American, West African, Cajun, Brazilian, Mediterranean, Filipino, and Japanese. </p>
-           
-        <img alt="delicious food and drinks" src="https://s3-media0.fl.yelpcdn.com/bphoto/BRiXYAbsCzaRtBMXafk13w/348s.jpg"/>
-        <h3>Drink and Dessert Vendors </h3>
-        <p>Whether you're craving matcha, boba, smoothies, or a sweet treat, you'll find what you're looking for!</p>
+        <h3>Gallery</h3>
 
-        <img style="height: 348px; width: 348px" alt="fresh produce" src="https://c.pxhere.com/photos/4f/33/vegetables_fruit_fresh_cabbage_food_healthy_summer_pepper-1102690.jpg!d"/>
-        <h3>Other Vendors</h3>
-        <p>Fresh fruit, produce, and unique finds!</p>
+        <div class="container">
+            <div class="panel active" style="background-image:url('https://s3-media0.fl.yelpcdn.com/bphoto/nfIawuKeCzvx5LcTx_IhZA/348s.jpg')">
+                <h3>Food Vendors</h3>
+                <p>Cuisine types include: Mexican, French, New American, West African, Cajun, Brazilian, Mediterranean, Filipino, and Japanese. </p>
+            </div>
+
+            <div class="panel" style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/BRiXYAbsCzaRtBMXafk13w/348s.jpg')">
+                <h3>Drinks and Desserts</h3>
+                <p>Whether you're craving matcha, boba, smoothies, or a sweet treat, you'll find what you're looking for!</p>
+            </div>
+
+            <div class="panel" style="background-image: url('https://c.pxhere.com/photos/4f/33/vegetables_fruit_fresh_cabbage_food_healthy_summer_pepper-1102690.jpg!d')">
+                <h3>Fresh Produce</h3>
+                <p>Fresh fruit, produce, and unique finds!</p>
+            </div>
+    
+        </div>
+   
+        <script src="image.js"></script>
 
 
         <!-- rsvp [PLACEHOLDER] -->

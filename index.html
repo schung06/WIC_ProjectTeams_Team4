@@ -31,6 +31,12 @@
         <h2>Subtitle</h2>
         <button type="Order Online">Order Online</button>
         <button type="See Directions to Farmer's Market">See Directions to Farmer's Market</button>
+        <button id="theme-button">Toggle Dark Mode</button>
+        <script>
+            document.getElementById('theme-button').addEventListener('click', function () {
+              document.body.classList.toggle('dark-mode');
+            });
+        </script>
 
 
         <!-- about
@@ -111,6 +117,6 @@
         <!-- footer [PLACEHOLDER] -->
         <!-- script [PLACEHOLDER]-->
 
-
+    <script src="index.js"></script>
     </body>
 </html>

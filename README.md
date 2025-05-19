@@ -9,7 +9,7 @@ This site provides information to UCSD's Epstein Farmer's Market, recurring Tues
 - Event Schedule
 - Links
 
-Credits:
+## Credits:
 Stephanie, Varsha, Alice, Romy, Hannah
 
 

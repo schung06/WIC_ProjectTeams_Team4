@@ -2,7 +2,7 @@
 ## Description
 This site provides information to UCSD's Epstein Farmer's Market, recurring Tuesdays. 
 
-##Features
+## Features
 - About the farmer's market
 - Directions
 - Featured food vendors

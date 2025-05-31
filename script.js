@@ -47,17 +47,17 @@ const reveal = () => {
         // Get current height of container and window
         let windowHeight = window.innerHeight;
         let topOfRevealableContainer = revealableContainers[i].getBoundingClientRect().top;;
-        let revealDistance = parseInt(getComputedStyle(current).getPropertyValue('--reveal-distance'), 10);
+        let revealDistance = parseInt(getComputedStyle(revealableContainers[i]).getPropertyValue('--reveal-distance'), 10);
 
 
 
         // If the container is within range, add the 'active' class to reveal
         if (topOfRevealableContainer < windowHeight - revealDistance) {
-            current.classList.add('active');
+            revealableContainers[i].classList.add('active');
         }
         // If the container is not within range, hide it by removing the 'active' class
         else {
-            current.classList.remove('active');
+            revealableContainers[i].classList.remove('active');
         }
     }
 }

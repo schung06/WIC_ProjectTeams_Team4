@@ -397,3 +397,23 @@ button:hover {
     --error-color: #f8bbd0;
     --error-color-border: #e63946;
 }
+/*** RSVP Section ***/
+.rsvp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+  
+}
+.rsvp-participants {
+  width: 45%;
+  padding-right: 10px;
+  
+}
+/* Add other rsvp-related selectors here */
+

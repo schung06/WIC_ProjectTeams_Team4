@@ -53,7 +53,7 @@ const addParticipant = (event) => {
   
 
   // Step 3.4: Find the rsvp-participants div and append the new <p>
-  const participantsDiv = document.getElementById('rsvp-participants');
+  const participantsDiv = document.querySelector('.rsvp-participants');
   participantsDiv.appendChild(participantInfo);
 
   // Optional: Clear input fields after submission

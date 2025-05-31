@@ -25,7 +25,7 @@ themeButton.addEventListener("click", toggleDarkMode);
     entered should be added to the list of participants.
 ***/
 
-
+let count = 3;
 // Step 1: Add your query for the submit RSVP button here
 const rsvpButton = document.getElementById('rsvp-button');
 
@@ -59,16 +59,33 @@ const addParticipant = (event) => {
   // Optional: Clear input fields after submission
   nameInput.value = '';
   emailInput.value = '';
+  const oldCountElement = document.getElementById('rsvp-count');
+  if (oldCountElement) {
+    oldCountElement.remove(); // Remove the old count element
+  }
+
+  count = count + 1; // Increment the counter
+
+  // Create and insert the new count element
+  const newCountElement = document.createElement('p');
+  newCountElement.id = 'rsvp-count';
+  newCountElement.textContent = `⭐ ${count} people have subscribed to this newsletter!`;
+
+  participantsDiv.appendChild(newCountElement); // Append to the bottom
+  document.getElementById('rsvp-form').reset();
+
  
   
 }
 
 
 // Step 3: Add a click event listener to the submit RSVP button here
-const rsvpForm = document.getElementById('rsvp-form');
-rsvpForm.addEventListener('submit', addParticipant);
-
-
+document.addEventListener('DOMContentLoaded', function () {
+  const rsvpForm = document.getElementById('rsvp-form');
+  if (rsvpForm) {
+    rsvpForm.addEventListener('submit', addParticipant);
+  }
+});
 /*** Form Handling [PLACEHOLDER] ***/
 /*** Form Validation [PLACEHOLDER] ***/
 /*** Animations [PLACEHOLDER] ***/

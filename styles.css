@@ -54,6 +54,21 @@ body {
     z-index: -2;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* space between image and text */
+}
+
+.header-logo {
+    height: 200px; /* adjust as needed */
+    width: auto;
+    display: block;
+}
+
+
+
 .header::before{
     content: '';
     position: absolute;
@@ -344,6 +359,12 @@ button:hover {
 
 }
 
+.logo img {
+    height: 70px;  
+    width: auto;
+    object-position: top left;
+}
+
 .nav ul{
     display: flex;
     list-style-type: none;
@@ -477,6 +498,10 @@ button:hover {
     --error-color-border: #e63946;
 }
 /*** RSVP Section ***/
+#rsvp {
+    margin-left: 40px; /* Adjust value as needed */
+}
+
 .rsvp-container {
   display: flex;
   flex-direction: row;
@@ -494,5 +519,7 @@ button:hover {
   padding-right: 10px;
   
 }
+
+
 /* Add other rsvp-related selectors here */
 
